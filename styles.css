@@ -1,0 +1,457 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0056b3;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 0 15px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #333;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+}
+#about {
+    background-color: #f9f9f9;
+    border-left: 4px solid #0056b3;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#about h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.visa-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+strong {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.cute-note {
+    font-size: 16px;
+    color: #5a5a5a;
+    background-color: #e6f7ff;
+    border-left: 3px solid #0056b3;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+#visa-perks {
+    background-color: #f0f8ff; /* Very light blue for a subtle, cheerful background */
+    padding: 25px;
+    margin-top: 30px;
+    border: 2px dashed #4A90E2; /* Dashed border for a playful look */
+    border-radius: 12px; /* Soft rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2); /* Light blue shadow for depth */
+    position: relative; /* For absolute positioning of pseudo-elements */
+}
+
+#visa-perks:before {
+    content: "🎉"; /* Decorative emoji for fun */
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 32px;
+}
+
+#visa-perks h2 {
+    color: #d63447; /* Bright red for enthusiasm */
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive; /* Fun and informal font */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.perks-list p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #336699; /* Moderate blue for readability and cheer */
+    margin-bottom: 15px;
+    text-align: justify;
+    background-color: #ffffff; /* White background for each perk to stand out */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners for a friendly touch */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadows for a pop-out effect */
+}
+
+.perks-list strong {
+    color: #2e8b57; /* Vivid green for keywords */
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #visa-perks {
+        padding: 20px;
+        border: 2px solid #4A90E2; /* Solid border on smaller screens for clarity */
+    }
+}
+
+
+
+
+#eligibility {
+    background-color: #ffffff;
+    border: 2px solid #0056b3;
+    padding: 20px;
+    margin: 20px 15px;
+    box-shadow: 0 4px 8px rgba(0, 56, 179, 0.2);
+}
+
+#eligibility h2 {
+    color: #0056b3;
+    font-size: 24px;
+}
+
+.eligibility-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.eligibility-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.eligibility-info ul li {
+    background: #e6f7ff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid #0056b3;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.eligibility-info ul li strong {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.remark {
+    color: #b30000; /* Bright red for importance */
+    background-color: #ffe6e6; /* Light red background for visibility */
+    padding: 10px;
+    margin-top: 15px;
+    border-left: 5px solid #b30000; /* Solid red line to draw attention */
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#application-process {
+    background-color: #f7f9fc; /* Subtle background to keep focus on content */
+    padding: 30px; /* Ample padding for a spacious layout */
+    margin: 20px auto; /* Center the section for prominence */
+    border: 5px solid #0177b5; /* Solid blue border for emphasis */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5); /* Strong shadow for a 3D effect */
+    animation: pulseBorder 2s infinite; /* Animation for dynamic interaction */
+    width: 90%; /* Appropriate width for readability */
+    max-width: 1200px; /* Maximum width to maintain structure */
+}
+
+@keyframes pulseBorder {
+    0% { box-shadow: 0 0 20px rgba(0, 123, 255, 0.5); }
+    50% { box-shadow: 0 0 30px rgba(0, 123, 255, 0.8); }
+    100% { box-shadow: 0 0 20px rgba(0, 123, 255, 0.5); }
+}
+
+.process-step {
+    background-color: #ffffff; /* White background for each step to stand out */
+    margin-bottom: 25px; /* Space between each step */
+    padding: 20px; /* Internal padding for content separation */
+    border: 1px solid #ccc; /* Subtle border for definition */
+    border-radius: 10px; /* Consistent rounded corners */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.process-step h3 {
+    color: #d63447; /* Eye-catching red for step titles */
+    font-size: 22px; /* Larger font size for importance */
+}
+
+.process-step p, .process-step ul {
+    font-size: 16px; /* Comfortable reading size */
+    line-height: 1.8; /* Enhanced line height for readability */
+    color: #333; /* Standard text color for contrast */
+}
+
+.process-step ul {
+    list-style-position: inside; /* Bullets inside to align text nicely */
+}
+
+.notice, .important-remark, .final-remark {
+    background-color: #fff3cd; /* Yellow background for critical notes */
+    color: #856404; /* Dark yellow text for readability */
+    padding: 10px;
+    margin-top: 10px;
+    border-left: 6px solid #ffd700; /* Gold border for emphasis */
+    border-radius: 5px; /* Soft rounded edges */
+    font-weight: bold; /* Bold font for importance */
+}
+
+.notice {
+    font-size: 14px; /* Smaller font for side notes */
+}
+
+.important-remark, .final-remark {
+    font-size: 16px; /* Standard font size for main content */
+}
+
+#resources {
+    background-color: #eaf3f9; /* A light, airy blue for a clean and fresh look */
+    padding: 30px; /* Generous padding for a spacious layout */
+    margin: 20px auto; /* Center alignment to focus attention */
+    border: 5px solid #4A90E2; /* Bright blue border for visual prominence */
+    border-radius: 12px; /* Soft rounded corners for a modern feel */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 90%; /* Limiting width for focused content display */
+    max-width: 1200px; /* Max width to avoid overstretch on larger screens */
+    position: relative; /* Needed for pseudo-elements and absolute positioning */
+    overflow: hidden; /* Keeps child elements contained within the border */
+}
+
+#resources:before {
+    content: "";
+    position: absolute;
+    top: -50px; right: -50px; /* Positioning outside the top right corner */
+    background-color: #4A90E2; /* Matching the border color */
+    height: 200px; width: 200px; /* Large enough to be noticeable */
+    border-radius: 50%; /* Perfect circle */
+    transform: scale(1.3); /* Slightly larger scale for effect */
+    animation: float 6s infinite ease-in-out; /* Floating animation for dynamics */
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) scale(1.3); }
+    50% { transform: translateY(-20px) scale(1.3); }
+}
+
+#resources h2 {
+    color: #333; /* Dark grey for contrast against light background */
+    font-size: 24px; /* Large font size for emphasis */
+    text-align: center; /* Centered text for a balanced header */
+}
+
+.university .dropdown-btn {
+    background-color: #4A90E2; /* Consistent bright blue for interactive elements */
+    color: white; /* White text for high contrast and readability */
+    padding: 12px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 8px;
+    margin-bottom: 5px; /* Space above dropdown for separation */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.university .dropdown-btn:hover {
+    background-color: #357ABD; /* Slightly darker blue on hover for interaction feedback */
+}
+
+.university .dropdown-content {
+    display: none;
+    background-color: #ffffff; /* White background for content to stand out */
+    padding: 15px 20px;
+    border-radius: 8px; /* Rounded corners for content box */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow for depth */
+}
+
+.university .dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.university .dropdown-content ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd; /* Subtle line to separate items */
+}
+
+.university .dropdown-content ul li a {
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 16px; /* Font size suitable for link content */
+}
+
+
+#faq {
+    background-color: #f8f9fa; /* Very light gray for a clean, modern background */
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.accordion-button {
+    background-color: #17a2b8; /* Soft teal for buttons, providing a calm, professional look */
+    color: white;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 5px; /* Space for separation between buttons */
+}
+
+.accordion-button:hover, .accordion-button.active {
+    background-color: #138496; /* Darker teal for a subtle hover effect */
+}
+
+.accordion-content {
+    background-color: #ffffff; /* Pure white background for the content to make it stand out */
+    display: none;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05); /* Light inner shadow for a subtle pop effect */
+}
+
+.accordion-content p {
+    margin: 0;
+    color: #555; /* Soft dark gray for easy readability */
+    line-height: 1.6; /* Adequate space between lines for clarity */
+}
+#qa-section {
+    padding: 20px;
+    background-color: #f9f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.qa-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.qa-table th, .qa-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+#question-form {
+    margin-top: 20px;
+}
+
+#question-input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+#contact-us {
+    background-color: #f9f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.contact-method {
+    margin-top: 20px;
+}
+
+.contact-method h3 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.contact-method p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.contact-method a {
+    font-size: 16px;
+    color: #d63447;
+    text-decoration: none;
+}
+
+.contact-method a:hover {
+    text-decoration: underline;
+}
+
+
+#site-footer {
+    background-color: #2c3e50; /* Dark blue for contrast and visibility */
+    color: #fff; /* White text for clarity */
+    text-align: center; /* Centered text for aesthetic appeal */
+    padding: 10px 20px; /* Padding for spacing */
+    font-size: 16px; /* Adequate font size for readability */
+    border-top: 4px solid #3498db; /* A blue border for a touch of style */
+}
+
+#site-footer p {
+    margin: 0; /* Removes default margin for a clean look */
+    line-height: 1.5; /* Line height for better readability */
+}
