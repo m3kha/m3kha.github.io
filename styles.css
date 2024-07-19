@@ -482,24 +482,30 @@ button:hover {
 }
 
 .testimonial-img {
-    width: 120px;  /* Adjusted width to be more appropriate */
-    height: 120px; /* Adjusted height to match width */
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin-right: 20px;
-    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    object-fit: cover;
 }
 
 .testimonial-content {
-    flex: 1; /* Ensures the content takes the remaining space */
+    flex: 1;
 }
 
 .testimonial-content h3 {
-    margin-top: 0;
+    margin: 0;
     color: #0056b3;
+}
+
+.testimonial-content h4 {
+    margin: 5px 0;
+    color: #333;
 }
 
 .testimonial-content p {
     font-size: 16px;
     line-height: 1.6;
     color: #666;
+    margin-top: 10px;
 }
