@@ -486,15 +486,15 @@ button:hover {
 }
 
 .testimonial-img {
-    width: 120px;
-    height: 120px;
+    width: 120px;  /* Adjusted width to be more appropriate */
+    height: 120px; /* Adjusted height to match width */
     border-radius: 50%;
     margin-right: 20px;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
 }
 
 .testimonial-content {
-    flex: 1;
+    flex: 1; /* Ensures the content takes the remaining space */
 }
 
 .testimonial-content h3 {
