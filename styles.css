@@ -478,14 +478,19 @@ button:hover {
     background-color: #ffffff;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-img {
-    width: 150px;
-    height: 150px;
+    width: 120px;  /* Adjusted width to be more appropriate */
+    height: 120px; /* Adjusted height to match width */
     border-radius: 50%;
     margin-right: 20px;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+.testimonial-content {
+    flex: 1; /* Ensures the content takes the remaining space */
 }
 
 .testimonial-content h3 {
