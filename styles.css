@@ -266,7 +266,7 @@ strong {
     content: "";
     position: absolute;
     top: -30px; right: -30px; /* Adjusted positioning */
-    background-color: rgba(74, 144, 226, 0.5); /* Matching the border color with transparency */
+    background-color: rgba(74, 144, 226, 0.3); /* More transparent blue */
     height: 100px; width: 100px; /* Smaller size */
     border-radius: 50%; /* Perfect circle */
     transform: scale(1.3); /* Slightly larger scale for effect */
