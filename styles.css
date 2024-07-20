@@ -254,7 +254,7 @@ strong {
     padding: 30px; /* Generous padding for a spacious layout */
     margin: 20px auto; /* Center alignment to focus attention */
     border: 5px solid #4A90E2; /* Bright blue border for visual prominence */
-    border-radius: 12px; /* Soft rounded corners for a modern feel */
+    border-radius: 7px; /* Soft rounded corners for a modern feel */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     width: 90%; /* Limiting width for focused content display */
     max-width: 1200px; /* Max width to avoid overstretch on larger screens */
