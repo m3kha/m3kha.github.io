@@ -265,9 +265,9 @@ strong {
 #resources:before {
     content: "";
     position: absolute;
-    top: -50px; right: -50px; /* Positioning outside the top right corner */
-    background-color: #4A90E2; /* Matching the border color */
-    height: 200px; width: 200px; /* Large enough to be noticeable */
+    top: -30px; right: -30px; /* Adjusted positioning */
+    background-color: rgba(74, 144, 226, 0.5); /* Matching the border color with transparency */
+    height: 100px; width: 100px; /* Smaller size */
     border-radius: 50%; /* Perfect circle */
     transform: scale(1.3); /* Slightly larger scale for effect */
     animation: float 6s infinite ease-in-out; /* Floating animation for dynamics */
@@ -325,6 +325,7 @@ strong {
     text-decoration: none;
     font-size: 16px; /* Font size suitable for link content */
 }
+
 
 
 #faq {
