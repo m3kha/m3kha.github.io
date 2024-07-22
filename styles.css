@@ -1,3 +1,4 @@
+/* General Styles */
 html {
     scroll-behavior: smooth;
 }
@@ -63,10 +64,10 @@ nav ul li a:hover {
     border-radius: 5px; /* Rounded corners */
 }
 
-/* Additional styling for sections and footer */
+/* Section Styling */
 section {
     padding: 80px 20px; /* Increased top padding to account for fixed header */
-    margin: 20px auto; /* Centered with margin */
+    margin: 80px 15px 20px; /* Top margin added to ensure no content is hidden behind header */
     background: #ffffff; /* White background */
     border: 1px solid #ddd; /* Light border */
     border-radius: 10px; /* Rounded corners */
