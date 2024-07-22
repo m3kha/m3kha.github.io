@@ -1,4 +1,3 @@
-
 // scripts.js
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -6,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector("header");
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-link");
+    const headerHeight = header.offsetHeight;
 
     window.addEventListener("scroll", function () {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Highlight the current section in the navigation
         sections.forEach((section) => {
             const rect = section.getBoundingClientRect();
-            if (rect.top <= 150 && rect.bottom >= 150) {
+            if (rect.top <= headerHeight && rect.bottom >= headerHeight) {
                 const id = section.getAttribute("id");
                 navLinks.forEach((link) => {
                     link.classList.remove("active");
@@ -39,9 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             const targetId = this.getAttribute("href").substring(1);
             const targetSection = document.getElementById(targetId);
+            const targetPosition = targetSection.offsetTop - headerHeight;
 
             window.scrollTo({
-                top: targetSection.offsetTop - 120, // Adjust for fixed header height
+                top: targetPosition,
                 behavior: "smooth",
             });
 
