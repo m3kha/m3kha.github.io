@@ -190,37 +190,54 @@ strong {
 }
 
 #application-process {
-    background-color: #f9f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f0f8ff; /* Light blue background for a soothing effect */
+    padding: 30px; /* Generous padding for spacious layout */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
     margin-top: 20px;
+    border: 3px solid #4A90E2; /* Bright blue border for emphasis */
 }
 
 #application-process h2 {
     text-align: center;
-    color: #0056b3;
+    color: #0056b3; /* Deep blue for a professional look */
     margin-bottom: 20px;
+    font-size: 28px; /* Larger font size for emphasis */
+    text-transform: uppercase; /* Uppercase text for a bold statement */
 }
 
 .process-step {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px; /* Adequate padding for content spacing */
+    border-radius: 10px; /* Rounded corners for visual appeal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin-bottom: 20px;
+    transition: transform 0.3s; /* Smooth transformation effect */
+}
+
+.process-step:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover for emphasis */
 }
 
 .process-step h3 {
-    color: #d63447; /* Red color to make the step title pop */
-    font-size: 22px; /* Larger font size for emphasis */
+    color: #d63447; /* Bright red for step titles to make them pop */
+    font-size: 22px; /* Larger font size for visibility */
     margin-top: 0;
 }
 
-.process-step p {
+.process-step p, .process-step ul {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
+    margin-top: 10px;
+}
+
+.process-step ul {
+    padding-left: 20px; /* Indent list items */
+}
+
+.process-step ul li {
+    margin-bottom: 5px; /* Space between list items */
 }
 
 .warning {
@@ -246,7 +263,6 @@ strong {
     font-size: 14px; /* Slightly smaller font size for warning text */
     line-height: 1.4; /* Line height for readability */
 }
-
 
 #resources {
     background-color: #eaf3f9; /* A light, airy blue for a clean and fresh look */
