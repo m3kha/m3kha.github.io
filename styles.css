@@ -9,6 +9,7 @@ body {
     padding: 0;
     color: #333;
     background-color: #f4f4f4;
+    padding-top: 80px; /* Adjust based on your header height */
 }
 
 /* Header Styling */
@@ -18,6 +19,7 @@ header {
     padding: 20px 0; /* Padding for vertical spacing */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     position: fixed; /* Fixed header */
+    top: 0; /* Ensure it is fixed to the top */
     width: 100%; /* Full width */
     z-index: 1000; /* Ensure it stays above other elements */
 }
@@ -65,8 +67,8 @@ nav ul li a:hover {
 
 /* Offset for sections to avoid being covered by the fixed header */
 .section-offset {
-    padding-top: 120px; /* Adjust based on your header height */
-    margin-top: -120px; /* Adjust based on your header height */
+    padding-top: 80px; /* Adjust based on your header height */
+    margin-top: -80px; /* Adjust based on your header height */
 }
 
 /* Additional styling for sections and footer */
@@ -91,6 +93,9 @@ footer p {
     margin: 0; /* Remove default margin */
     font-size: 14px; /* Smaller font size */
 }
+
+
+
 
 /* About Section */
 #about {
