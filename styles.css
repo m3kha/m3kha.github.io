@@ -190,64 +190,63 @@ strong {
 }
 
 #application-process {
-    background-color: #f7f9fc; /* Subtle background to keep focus on content */
-    padding: 30px; /* Ample padding for a spacious layout */
-    margin: 20px auto; /* Center the section for prominence */
-    border: 5px solid #0177b5; /* Solid blue border for emphasis */
-    border-radius: 15px; /* Rounded corners for a modern look */
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5); /* Strong shadow for a 3D effect */
-    animation: pulseBorder 2s infinite; /* Animation for dynamic interaction */
-    width: 90%; /* Appropriate width for readability */
-    max-width: 1200px; /* Maximum width to maintain structure */
+    background-color: #f9f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
-@keyframes pulseBorder {
-    0% { box-shadow: 0 0 20px rgba(0, 123, 255, 0.5); }
-    50% { box-shadow: 0 0 30px rgba(0, 123, 255, 0.8); }
-    100% { box-shadow: 0 0 20px rgba(0, 123, 255, 0.5); }
+#application-process h2 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 20px;
 }
 
 .process-step {
-    background-color: #ffffff; /* White background for each step to stand out */
-    margin-bottom: 25px; /* Space between each step */
-    padding: 20px; /* Internal padding for content separation */
-    border: 1px solid #ccc; /* Subtle border for definition */
-    border-radius: 10px; /* Consistent rounded corners */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .process-step h3 {
-    color: #d63447; /* Eye-catching red for step titles */
-    font-size: 22px; /* Larger font size for importance */
+    color: #d63447; /* Red color to make the step title pop */
+    font-size: 22px; /* Larger font size for emphasis */
+    margin-top: 0;
 }
 
-.process-step p, .process-step ul {
-    font-size: 16px; /* Comfortable reading size */
-    line-height: 1.8; /* Enhanced line height for readability */
-    color: #333; /* Standard text color for contrast */
+.process-step p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
 }
 
-.process-step ul {
-    list-style-position: inside; /* Bullets inside to align text nicely */
-}
-
-.notice, .important-remark, .final-remark {
-    background-color: #fff3cd; /* Yellow background for critical notes */
+.warning {
+    display: flex;
+    align-items: center;
+    background-color: #fff3cd; /* Light yellow background for warning */
     color: #856404; /* Dark yellow text for readability */
-    padding: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #ffcc00; /* Gold left border for emphasis */
     margin-top: 10px;
-    border-left: 6px solid #ffd700; /* Gold border for emphasis */
-    border-radius: 5px; /* Soft rounded edges */
-    font-weight: bold; /* Bold font for importance */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.notice {
-    font-size: 14px; /* Smaller font for side notes */
+.warning-icon {
+    width: 30px; /* Width for the warning icon */
+    height: 30px; /* Height for the warning icon */
+    margin-right: 10px; /* Space between the icon and text */
 }
 
-.important-remark, .final-remark {
-    font-size: 16px; /* Standard font size for main content */
+.warning p {
+    margin: 0; /* Remove margin for compact text display */
+    font-size: 14px; /* Slightly smaller font size for warning text */
+    line-height: 1.4; /* Line height for readability */
 }
+
 
 #resources {
     background-color: #eaf3f9; /* A light, airy blue for a clean and fresh look */
