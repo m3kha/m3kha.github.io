@@ -15,7 +15,7 @@ body {
 header {
     background: #0056b3; /* Deep blue background */
     color: #ffffff; /* White text color */
-    padding: 10px 0; /* Padding for vertical spacing */
+    padding: 5px 0; /* Padding for vertical spacing */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     position: fixed; /* Fixed header */
     width: 100%; /* Full width */
