@@ -11,26 +11,79 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header Styling */
 header {
-    background: #0056b3;
-    color: #ffffff;
-    padding: 10px 20px;
-    text-align: center;
+    background: #0056b3; /* Deep blue background */
+    color: #ffffff; /* White text color */
+    padding: 20px 0; /* Padding for vertical spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed; /* Fixed header */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center;
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.logo {
+    font-size: 24px; /* Larger font size for the logo */
+    font-weight: bold; /* Bold font weight */
+    color: #ffffff; /* White color for the logo */
+    text-decoration: none; /* Remove underline from the logo */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display items in a row */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin-left: 20px; /* Space between nav items */
 }
 
 nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
+    color: #ffffff; /* White color for nav links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for nav links */
+    padding: 10px 15px; /* Padding for clickable area */
+    transition: background 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background: #ffffff; /* White background on hover */
+    color: #0056b3; /* Blue text color on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Additional styling for sections and footer */
+section {
+    padding: 80px 20px; /* Increased top padding to account for fixed header */
+    margin: 20px auto; /* Centered with margin */
+    background: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 1200px; /* Limit the maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0; /* Increased padding */
+    background: #333; /* Dark background */
+    color: #ffffff; /* White text color */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Smaller font size */
 }
 
 section {
