@@ -66,7 +66,7 @@ nav ul li a:hover {
 /* Offset for sections to avoid being covered by the fixed header */
 .section-offset {
     padding-top: 30px; /* Adjust based on your header height */
-    margin-top: -30px; /* Adjust based on your header height */
+    margin-top: 0px; /* Adjust based on your header height */
 }
 
 /* Additional styling for sections and footer */
