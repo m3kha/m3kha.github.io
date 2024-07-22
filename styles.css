@@ -86,23 +86,7 @@ footer p {
     font-size: 14px; /* Smaller font size */
 }
 
-section {
-    padding: 20px;
-    margin: 0 15px;
-    background: #ffffff;
-    border: 1px solid #ddd;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 20px;
-    background: #333;
-    color: #ffffff;
-}
-
-footer p {
-    margin: 0;
-}
+/* About Section */
 #about {
     background-color: #f9f9f9;
     border-left: 4px solid #0056b3;
@@ -138,8 +122,7 @@ strong {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-
-
+/* Visa Perks Section */
 #visa-perks {
     background-color: #f0f8ff; /* Very light blue for a subtle, cheerful background */
     padding: 25px;
@@ -189,9 +172,7 @@ strong {
     }
 }
 
-
-
-
+/* Eligibility Section */
 #eligibility {
     background-color: #ffffff;
     border: 2px solid #0056b3;
@@ -242,6 +223,7 @@ strong {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* Application Process Section */
 #application-process {
     background-color: #f9fafc; /* Light blue background for a calming effect */
     padding: 40px; /* Generous padding for spacious layout */
@@ -380,7 +362,7 @@ strong {
     text-decoration: underline; /* Underline on hover for links */
 }
 
-
+/* Resources Section */
 #resources {
     background-color: #eaf3f9; /* A light, airy blue for a clean and fresh look */
     padding: 30px; /* Generous padding for a spacious layout */
@@ -458,8 +440,7 @@ strong {
     font-size: 16px; /* Font size suitable for link content */
 }
 
-
-
+/* FAQ Section */
 #faq {
     background-color: #f8f9fa; /* Very light gray for a clean, modern background */
     padding: 25px;
@@ -501,6 +482,8 @@ strong {
     color: #555; /* Soft dark gray for easy readability */
     line-height: 1.6; /* Adequate space between lines for clarity */
 }
+
+/* Community Q&A Section */
 #qa-section {
     padding: 20px;
     background-color: #f9f9fa;
@@ -544,7 +527,7 @@ button:hover {
     background-color: #45a049;
 }
 
-
+/* Contact Us Section */
 #contact-us {
     background-color: #f9f9fa;
     padding: 20px;
@@ -578,22 +561,7 @@ button:hover {
     text-decoration: underline;
 }
 
-
-#site-footer {
-    background-color: #2c3e50; /* Dark blue for contrast and visibility */
-    color: #fff; /* White text for clarity */
-    text-align: center; /* Centered text for aesthetic appeal */
-    padding: 10px 20px; /* Padding for spacing */
-    font-size: 16px; /* Adequate font size for readability */
-    border-top: 4px solid #3498db; /* A blue border for a touch of style */
-}
-
-#site-footer p {
-    margin: 0; /* Removes default margin for a clean look */
-    line-height: 1.5; /* Line height for better readability */
-}
-
-
+/* Experiences Section */
 #experiences {
     background-color: #f9f9fa;
     padding: 20px;
