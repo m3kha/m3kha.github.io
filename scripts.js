@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-link");
     const headerHeight = header.offsetHeight;
-    const additionalOffset = 20; // Adjust this value to match the additional padding you added
+    const additionalOffset = 40; // Increase this value to match the additional padding you added
 
     window.addEventListener("scroll", function () {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
