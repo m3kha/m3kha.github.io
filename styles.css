@@ -1,3 +1,5 @@
+/* Existing CSS */
+
 html {
     scroll-behavior: smooth;
 }
@@ -9,7 +11,6 @@ body {
     padding: 0;
     color: #333;
     background-color: #f4f4f4;
-    padding-top: 80px; /* Adjust based on your header height */
 }
 
 /* Header Styling */
@@ -19,9 +20,14 @@ header {
     padding: 20px 0; /* Padding for vertical spacing */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     position: fixed; /* Fixed header */
-    top: 0; /* Ensure it is fixed to the top */
+    top: 0; /* Position at the top of the viewport */
     width: 100%; /* Full width */
     z-index: 1000; /* Ensure it stays above other elements */
+    transition: top 0.3s; /* Smooth transition for hiding and showing */
+}
+
+.header-hidden {
+    top: -100px; /* Move header up to hide it */
 }
 
 .nav-container {
@@ -59,7 +65,7 @@ nav ul li a {
     transition: background 0.3s, color 0.3s; /* Smooth transition */
 }
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a.active {
     background: #ffffff; /* White background on hover */
     color: #0056b3; /* Blue text color on hover */
     border-radius: 5px; /* Rounded corners */
@@ -67,8 +73,8 @@ nav ul li a:hover {
 
 /* Offset for sections to avoid being covered by the fixed header */
 .section-offset {
-    padding-top: 80px; /* Adjust based on your header height */
-    margin-top: -80px; /* Adjust based on your header height */
+    padding-top: 120px; /* Adjust based on your header height */
+    margin-top: -120px; /* Adjust based on your header height */
 }
 
 /* Additional styling for sections and footer */
@@ -80,6 +86,7 @@ section {
     border-radius: 10px; /* Rounded corners */
     max-width: 1200px; /* Limit the maximum width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Add some space between sections */
 }
 
 footer {
@@ -92,6 +99,12 @@ footer {
 footer p {
     margin: 0; /* Remove default margin */
     font-size: 14px; /* Smaller font size */
+}
+
+/* Additional styles for active section highlighting */
+.active-section {
+    border-left: 5px solid #0056b3; /* Highlight the left border */
+    background-color: #e6f7ff; /* Light blue background */
 }
 
 
