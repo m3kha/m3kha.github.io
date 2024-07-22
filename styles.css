@@ -20,6 +20,14 @@ header {
     position: fixed; /* Fixed header */
     width: 100%; /* Full width */
     z-index: 1000; /* Ensure it stays above other elements */
+    /* Offset for sections to avoid being covered by the fixed header */
+/* Offset for sections to avoid being covered by the fixed header */
+.section-offset {
+    padding-top: 100px; /* Adjust based on your header height */
+    margin-top: -100px; /* Adjust based on your header height */
+}
+
+
 }
 
 .nav-container {
