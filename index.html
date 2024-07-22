@@ -1,257 +1,636 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F-2-7S Visa Information Portal</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="nav-container">
-                <a href="#" class="logo">F-2-7S Visa Portal</a>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#application-process">Application Process</a></li>
-                    <li><a href="#eligibility">Eligibility</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                    <li><a href="#faq">FAQs</a></li>
-                    <li><a href="#contact-us">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+html {
+    scroll-behavior: smooth;
+}
 
-    <section id="about" class="section-offset">
-        <h2>About the Visa</h2>
-        <div class="visa-info">
-            <p>The South Korean Ministry of Justice has launched a progressive initiative aimed at enhancing the nation's talent pool by facilitating pathways to permanent residency or citizenship. This initiative is particularly beneficial for international students graduating from prestigious institutions in Korea.</p>
-            <p>Under this scheme, the <strong>F-2-7S visa</strong> is offered to eligible students and recent alumni from universities such as UST, KAIST, UNIST, DGIST, and GIST. This visa allows for a maximum sojourn period of five years, offering a substantial timeframe for graduates to develop their careers and establish a life in South Korea.</p>
-            <p class="cute-note">Did you know? The <strong>F-2-7S visa</strong> first made its appearance in December 2021, marking a significant milestone in South Korea's approach to international education and residency.</p>
-        </div>
-    </section>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
 
-    <section id="visa-perks" class="section-offset">
-        <h2>F-2-7S Visa Perks</h2>
-        <div class="perks-list">
-            <p><strong>Long-Term Residency:</strong> The F-2-7S visa allows for a longer stay compared to other visa types, with the potential for extensions based on continued eligibility. A welcoming embrace for a future full of possibilities!</p>
-            <p><strong>Path to Permanent Residency and Citizenship:</strong> Just 3 years after obtaining this visa, you can apply for permanent residency 😊 and, once you’ve secured that, stepping up to citizenship is just a matter of meeting the points-based system requirements. Yes, it’s that straightforward, eeh ya! 😃</p>
-            <p><strong>Family Inclusion:</strong> Your loved ones can join in on the adventure! Spouses and dependent children of the primary visa holder can also receive visas under certain conditions. Everyone’s invited!</p>
-            <p><strong>Employment Flexibility:</strong> Enjoy the freedom to switch jobs or kickstart your own business any time you like! No extra paperwork, no sponsorship hurdles. It’s your career, on your terms! 🌟</p>
-        </div>
-    </section>
+/* Header Styling */
+header {
+    background: #0056b3; /* Deep blue background */
+    color: #ffffff; /* White text color */
+    padding: 20px 0; /* Padding for vertical spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed; /* Fixed header */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
 
-    <section id="eligibility" class="section-offset">
-        <h2>Eligibility Criteria</h2>
-        <div class="eligibility-info">
-            <p>Applicants interested in the F-2-7S visa must meet all of the following requirements. Note that the application can be submitted up to twice:</p>
-            <ul>
-                <li><strong>Current Legal Residency:</strong> Applicants must be legally residing in Korea at the time of application.</li>
-                <li><strong>Graduation Status:</strong> Applicants who are expected to graduate, or those who have graduated but not more than one year has passed since their graduation, with either an MSc or PhD degree from one of the following universities: UST, KAIST, UNIST, DGIST, GIST.</li>
-                <li><strong>Presidential Recommendation:</strong> For example, a KAIST master’s or doctoral degree holder, recommended by the president of KAIST, is eligible for this opportunity.</li>
-            </ul>
-            <p class="remark">Note: BSc graduates are not eligible to apply for this visa.</p>
-            <p class="remark">Additional Note: This visa is inapplicable to individuals residing outside of Korea after obtaining a master’s or doctoral degree from KAIST.</p>
-        </div>
-    </section>
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center;
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Horizontal padding */
+}
 
-    <section id="application-process" class="section-offset">
-        <h2>Application Process</h2>
-        <div class="process-step">
-            <h3>1. Application for Letter of Recommendation</h3>
-            <p>Submit the following documents to the University's Student Service Office, e.g., KAIST ISSS:</p>
-            <ul>
-                <li>Official criminal record certificate from home country (scanned file to ISSS) <br>
-                    <span class="notice">* Valid if issued within three months of the visa application. Must be translated and notarized in English if not originally in English.</span>
-                </li>
-                <li>3 x Recommendation letters (1 from academic advisor, 2 from Korean fellows (KAIST-ian), all written in English)</li>
-                <li>1 x List of Key Achievements for President’s Letter of Recommendation (written in English) <br>
-                    <span class="notice">* Mandatory for applicants from October 1, 2022, onwards.</span>
-                </li>
-                <li>CV</li>
-                <li>Korean language proficiency evidence (TOPIK) or proof of course completion in Korean from your university</li>
-            </ul>
-        </div>
-        <div class="process-step">
-            <h3>2. Invited to an Interview</h3>
-            <p>Prepare for the interview, demonstrate your enthusiasm for staying and working in Korea, and show how you plan to integrate into Korean society. Be honest and express your long-term goals clearly.</p>
-        <div class="warning">
-                <img src="https://img.icons8.com/ios-filled/50/000000/error.png" alt="Warning" class="warning-icon">
-                <p>In the interview or when you write your plans, you should express that you want to work in Korea, not apply for a PhD. If you say you want to pursue a PhD, they might tell you that you don't need an F-2-7 visa for that, and you will be denied. Another reason for denial would be indicating that you only want to work in a foreign company situated in Korea. There was a case where an applicant who wanted to work exclusively in a foreign company in Korea got declined. Make sure to show that you want to work in a Korean company.</p>
-            </div>
-        </div>
+.logo {
+    font-size: 24px; /* Larger font size for the logo */
+    font-weight: bold; /* Bold font weight */
+    color: #ffffff; /* White color for the logo */
+    text-decoration: none; /* Remove underline from the logo */
+}
 
-        
-        <div class="process-step">
-            <h3>3. President’s Recommendation Letter Issuance Process</h3>
-            <p>Interviews are granted only to those who submit all required documents, including three recommendation letters and an apostilled official criminal record certificate.</p>
-            <p>ISSS will contact candidates for interviews individually. Successful candidates will receive the president's letter of recommendation within 2-3 business days after the interview results are announced.</p>
-            <p class="important-remark">* Those who do not pass the interview may be given a second chance if they submit a letter of justification within 10 days from the notification date. Second chance interviews are conducted twice a year (January-February, July-August).</p>
-            <p class="final-remark">* Those who fail to pass the first interview or the second chance interview and do not receive a president’s recommendation letter should apply for the existing F2-7 (point system) residence visa.</p>
-        </div>
-         <div class="process-step">
-            <h3>4. Application for the Visa at the Global Talent Visa Center</h3>
-            <p>Submit your completed application including all required documents and the president’s recommendation letter to the Global Talent Visa Center.</p>
-            <button class="dropdown-btn">Documents to Submit to the Immigration Office &#9660;</button>
-            <div class="dropdown-content">
-                <ul>
-                    <li>F-2-7S visa application form</li>
-                    <li>Passport</li>
-                    <li>Residence Card</li>
-                    <li>1 Identification picture</li>
-                    <li>Application fee (Revenue Stamp: KRW 100,000), Card issuance fee (KRW 30,000)</li>
-                    <li>Certificate of Residence</li>
-                    <li>Certificate of an academic degree (Expected Graduation Certificate is not accepted)</li>
-                    <li>Official criminal record certificate from home country (issued within three months) – original copy</li>
-                    <li>Recommendation letter from the president of KAIST</li>
-                    <li>Certificate of Income Amount (Can be issued from a tax office) – Mandatory even without income</li>
-                    <li>Foreigner Occupation and Annual Income Report – Mandatory even without income</li>
-                    <li>Employment Certificate, Employment Contract, business license* (where applicable)</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display items in a row */
+}
 
-    <section id="resources" class="section-offset">
-        <h2>Resources</h2>
-        <div class="university" id="KAIST">
-            <button class="dropdown-btn">KAIST</button>
-            <div class="dropdown-content">
-                <ul>
-                    <li><a href="https://docs.google.com/document/d/1Y5SBkGBBpxlOKMSB1SQMNoAzxp_xc3W-/edit?usp=sharing&ouid=106768684379584332443&rtpof=true&sd=true" target="_blank">Recommendation Letter Form (Academic Advisor)</a></li>
-                    <li><a href="https://docs.google.com/document/d/1a4eUyu42oIhAUp-fxhk94ulxSJpwv8Zb7sC9B5est14/edit?usp=sharing" target="_blank">Recommendation Letter Form (Korean Fellow: KAIST-ian)</a></li>
-                    <li><a href="https://drive.google.com/file/d/1XGg0sHA898dGMrdIBgfmRrCXh-Ro_CAf/view?usp=sharing" target="_blank">Foreigner Occupation and Annual Income Report Form</a></li>
-                    <li><a href="https://docs.google.com/document/d/1KWvQlhcFeoobL0rYxEAU7PXeE0dz1WSG/edit?usp=sharing&ouid=106768684379584332443&rtpof=true&sd=true" target="_blank">List of Key Achievements for President’s Letter of Recommendation Form</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="university" id="UST">
-            <button class="dropdown-btn">UST</button>
-            <div class="dropdown-content">
-                <p>We will attach it the moment we get the resources.</p>
-            </div>
-        </div>
-        <div class="university" id="UNIST">
-            <button class="dropdown-btn">UNIST</button>
-            <div class="dropdown-content">
-                <p>We will attach it the moment we get the resources.</p>
-            </div>
-        </div>
-        <div class="university" id="DGIST">
-            <button class="dropdown-btn">DGIST</button>
-            <div class="dropdown-content">
-                <p>We will attach it the moment we get the resources.</p>
-            </div>
-        </div>
-        <div class="university" id="GIST">
-            <button class="dropdown-btn">GIST</button>
-            <div class="dropdown-content">
-                <p>We will attach it the moment we get the resources.</p>
-            </div>
-        </div>
-    </section>
+nav ul li {
+    margin-left: 20px; /* Space between nav items */
+}
 
-    <section id="faq" class="section-offset">
-        <h2>Frequently Asked Questions (FAQs)</h2>
-        <div class="accordion">
-            <div class="accordion-item">
-                <button class="accordion-button" onclick="toggleAccordion(this)">Q: What is the difference between the F-2-7 and F-2-7S visas?</button>
-                <div class="accordion-content">
-                    <p>The F-2-7 visa is a general long-term residency visa based on a points system, while the F-2-7S visa is specifically designed for highly talented individuals, often with more stringent requirements and higher expectations for professional achievements and income levels.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <button class="accordion-button" onclick="toggleAccordion(this)">Q: Can my family join me in South Korea on an F-2-7S visa?</button>
-                <div class="accordion-content">
-                    <p>Yes, spouses and dependent children can join the primary visa holder under the F-2-7S visa, provided the primary holder meets the necessary income requirements to support their stay.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <button class="accordion-button" onclick="toggleAccordion(this)">Q: What documents are needed for the F-2-7S visa application?</button>
-                <div class="accordion-content">
-                    <p>Please scroll up to the "Application Process" section for detailed document requirements.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <button class="accordion-button" onclick="toggleAccordion(this)">Q: When can I apply for the extension of my visa?</button>
-                <div class="accordion-content">
-                    <p>You can apply for the extension starting from 4 months to 1 month before the expiration date. For example, if it is expiring on February 22, 2025, you can start applying from October 2024.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <button class="accordion-button" onclick="toggleAccordion(this)">Q: How many years of visa will they give us when we apply for the first time?</button>
-                <div class="accordion-content">
-                    <p>The total period of the visa is 5 years, and they will give you a maximum of 2 years each time. Remember, it depends on the expiration date of your passport. If it will expire within one year of your visa application, you will only get one year. So, try to update your passport. But still, you can apply for the extension, but you have to pay the application fee, which you would have avoided if you had gotten two years from the start.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+nav ul li a {
+    color: #ffffff; /* White color for nav links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for nav links */
+    padding: 10px 15px; /* Padding for clickable area */
+    transition: background 0.3s, color 0.3s; /* Smooth transition */
+}
 
-    <section id="experiences" class="section-offset">
-        <h2>Visa Recipients' Experiences</h2>
-        <div class="testimonial">
-            <img src="https://m3kha.github.io/Photo/Mekdes.jpeg" alt="Mekdes Hailu" class="testimonial-img">
-            <div class="testimonial-content">
-                <h3>Mekdes Hailu</h3>
-                <h4>MSc in Mechanical Engineering (KAIST)</h4>
-                <h4>Development Engineer</h4>
-                <p>Receiving the F-2-7S visa in February 2023 has been a pivotal moment in my career and life in Korea. This visa has enabled me to work as a Development Engineer at Jinsol Turbo Machinery, where I've made significant contributions in designing advanced cooling systems and compact heat exchangers. Additionally, it has provided me with the opportunity to expand my professional network, engage in collaborative projects, and gain invaluable experience in a global environment. This has not only enhanced my technical skills but also enriched my cultural understanding, making my time in Korea profoundly rewarding both professionally and personally.</p>
-            </div>
-        </div>
-        <!-- Repeat the above div for each testimonial -->
-        <!-- Alexander Fuhrmann's Testimonial -->
-        <div class="testimonial">
-            <img src="https://m3kha.github.io/Photo/Alexander.jpg" alt="Alexander Fuhrmann" class="testimonial-img">
-            <div class="testimonial-content">
-                <h3>Alexander Fuhrmann</h3>
-                <h4>MSc in Mechanical Engineering (KAIST | KIT) </h4>
-                <h4>Researcher</h4>
-                <p>The visa helped me to pursue my interest in the field of medical robotics as I was independent from all the companies. This is a big advantage in my opinion because you dont feel burdened or pressured by your company.</p>
-                <p>Another aspect of this visa is the perspective of obtaining permanent residence and naturalization. I would say this is definetly something people should consider if they want to upgrade their passport. All in all i see this as a great opportunity to encourage foreigners stay a little longer in korea before deciding to completely return to their countries for good.</p>
-            </div>
-        </div>
-    </section>
+nav ul li a:hover {
+    background: #ffffff; /* White background on hover */
+    color: #0056b3; /* Blue text color on hover */
+    border-radius: 5px; /* Rounded corners */
+}
 
-    <section id="qa-section" class="section-offset">
-        <h2>Community Q&A</h2>
-        <table class="qa-table">
-            <thead>
-                <tr>
-                    <th>Question</th>
-                    <th>Answers</th>
-                </tr>
-            </thead>
-            <tbody id="qa-body">
-                <!-- Dynamic rows will be inserted here -->
-            </tbody>
-        </table>
-        <form id="question-form">
-            <input type="text" id="question-input" placeholder="Ask your question here..." required>
-            <button type="submit">Submit Question</button>
-        </form>
-    </section>
+/* Offset for sections to avoid being covered by the fixed header */
+.section-offset {
+    padding-top: 120px; /* Adjust based on your header height */
+    margin-top: -120px; /* Adjust based on your header height */
+}
 
-    <section id="contact-us" class="section-offset">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or need further assistance, please do not hesitate to reach out to us:</p>
-        <div class="contact-method">
-            <h3>Email</h3>
-            <p>Please use the following email to contact us, and remember to start your subject line with "F27S" to ensure your message is promptly addressed:</p>
-            <a href="mailto:hamekdes@gmail.com?subject=F27S">f27svisa@gmail.com</a>
-        </div>
-        <div class="contact-method">
-            <h3>Telephone</h3>
-            <p>You can also contact the Daejeon Immigration Office directly at the number below:</p>
-            <p><a href="tel:+8221345">+82-2-1345</a></p>
-        </div>
-    </section>
+/* Additional styling for sections and footer */
+section {
+    padding: 20px;
+    margin: 0 15px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners */
+    max-width: 1200px; /* Limit the maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
 
-    <footer>
-        <p>Copyright © 2024 F2-S7 Visa Information Portal</p>
-        <p>Created by a helpful KAIST alum – Making your application journey a breeze! :) <br> TMH</p>
-    </footer>
+footer {
+    text-align: center;
+    padding: 20px 0; /* Increased padding */
+    background: #333; /* Dark background */
+    color: #ffffff; /* White text color */
+}
 
-    <script src="dropdown.js"></script>
-</body>
-</html>
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Smaller font size */
+}
+
+/* About Section */
+#about {
+    background-color: #f9f9f9;
+    border-left: 4px solid #0056b3;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#about h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.visa-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+strong {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.cute-note {
+    font-size: 16px;
+    color: #5a5a5a;
+    background-color: #e6f7ff;
+    border-left: 3px solid #0056b3;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Visa Perks Section */
+#visa-perks {
+    background-color: #f0f8ff; /* Very light blue for a subtle, cheerful background */
+    padding: 25px;
+    margin-top: 30px;
+    border: 2px dashed #4A90E2; /* Dashed border for a playful look */
+    border-radius: 12px; /* Soft rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2); /* Light blue shadow for depth */
+    position: relative; /* For absolute positioning of pseudo-elements */
+}
+
+#visa-perks:before {
+    content: "🎉"; /* Decorative emoji for fun */
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 32px;
+}
+
+#visa-perks h2 {
+    color: #d63447; /* Bright red for enthusiasm */
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive; /* Fun and informal font */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.perks-list p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #336699; /* Moderate blue for readability and cheer */
+    margin-bottom: 15px;
+    text-align: justify;
+    background-color: #ffffff; /* White background for each perk to stand out */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners for a friendly touch */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadows for a pop-out effect */
+}
+
+.perks-list strong {
+    color: #2e8b57; /* Vivid green for keywords */
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #visa-perks {
+        padding: 20px;
+        border: 2px solid #4A90E2; /* Solid border on smaller screens for clarity */
+    }
+}
+
+/* Eligibility Section */
+#eligibility {
+    background-color: #ffffff;
+    border: 2px solid #0056b3;
+    padding: 20px;
+    margin: 20px 15px;
+    box-shadow: 0 4px 8px rgba(0, 56, 179, 0.2);
+}
+
+#eligibility h2 {
+    color: #0056b3;
+    font-size: 24px;
+}
+
+.eligibility-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.eligibility-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.eligibility-info ul li {
+    background: #e6f7ff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid #0056b3;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.eligibility-info ul li strong {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.remark {
+    color: #b30000; /* Bright red for importance */
+    background-color: #ffe6e6; /* Light red background for visibility */
+    padding: 10px;
+    margin-top: 15px;
+    border-left: 5px solid #b30000; /* Solid red line to draw attention */
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Application Process Section */
+#application-process {
+    background-color: #f9fafc; /* Light blue background for a calming effect */
+    padding: 40px; /* Generous padding for spacious layout */
+    border-radius: 15px; /* More rounded corners for a modern look */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+    margin-top: 30px;
+    border: 3px solid #007BFF; /* Bright blue border for emphasis */
+}
+
+#application-process h2 {
+    text-align: center;
+    color: #333; /* Dark grey for a professional look */
+    margin-bottom: 30px;
+    font-size: 30px; /* Larger font size for emphasis */
+    text-transform: uppercase; /* Uppercase text for a bold statement */
+    letter-spacing: 1px; /* Spacing between letters for readability */
+}
+
+.process-step {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 25px; /* Adequate padding for content spacing */
+    border-radius: 10px; /* Rounded corners for visual appeal */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    margin-bottom: 25px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transformation and shadow effect */
+}
+
+.process-step:hover {
+    transform: translateY(-5px); /* Slightly lift on hover for emphasis */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.process-step h3 {
+    color: #d9534f; /* Bright red for step titles to make them pop */
+    font-size: 24px; /* Larger font size for visibility */
+    margin-top: 0;
+    margin-bottom: 10px; /* Space between title and content */
+    border-left: 5px solid #d9534f; /* Left border for decoration */
+    padding-left: 10px; /* Padding for left border */
+}
+
+.process-step p, .process-step ul {
+    font-size: 16px;
+    line-height: 1.8; /* Slightly increased line height for readability */
+    color: #555; /* Softer grey for text */
+    margin-top: 10px;
+}
+
+.process-step ul {
+    padding-left: 20px; /* Indent list items */
+}
+
+.process-step ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.notice {
+    display: block;
+    margin-top: 5px;
+    color: #007BFF; /* Blue for notice text */
+    font-size: 14px; /* Smaller font size for notice text */
+}
+
+.warning {
+    display: flex;
+    align-items: center;
+    background-color: #fff3cd; /* Light yellow background for warning */
+    color: #856404; /* Dark yellow text for readability */
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #ffcc00; /* Gold left border for emphasis */
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+}
+
+.warning-icon {
+    width: 40px; /* Larger width for the warning icon */
+    height: 40px; /* Larger height for the warning icon */
+    margin-right: 15px; /* Space between the icon and text */
+}
+
+.warning p {
+    margin: 0; /* Remove margin for compact text display */
+    font-size: 16px; /* Slightly larger font size for warning text */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.dropdown-btn {
+    background-color: #007BFF; /* Consistent bright blue for interactive elements */
+    color: white; /* White text for high contrast and readability */
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 10px; /* Rounded corners for buttons */
+    margin-bottom: 10px; /* Space above dropdown for separation */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.dropdown-btn:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover for interaction feedback */
+    transform: translateY(-2px); /* Slightly lift on hover */
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #ffffff; /* White background for content to stand out */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for content box */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-content ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Subtle line to separate items */
+}
+
+.dropdown-content ul li:last-child {
+    border-bottom: none; /* Remove border for last item */
+}
+
+.dropdown-content ul li a {
+    color: #007BFF; /* Blue for links */
+    text-decoration: none;
+    font-size: 16px; /* Font size suitable for link content */
+}
+
+.dropdown-content ul li a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Resources Section */
+#resources {
+    background-color: #eaf3f9; /* A light, airy blue for a clean and fresh look */
+    padding: 30px; /* Generous padding for a spacious layout */
+    margin: 20px auto; /* Center alignment to focus attention */
+    border: 5px solid #4A90E2; /* Bright blue border for visual prominence */
+    border-radius: 7px; /* Soft rounded corners for a modern feel */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 90%; /* Limiting width for focused content display */
+    max-width: 1200px; /* Max width to avoid overstretch on larger screens */
+    position: relative; /* Needed for pseudo-elements and absolute positioning */
+    overflow: hidden; /* Keeps child elements contained within the border */
+}
+
+#resources:before {
+    content: "";
+    position: absolute;
+    top: -30px; right: -30px; /* Adjusted positioning */
+    background-color: rgba(74, 144, 226, 0.3); /* More transparent blue */
+    height: 100px; width: 100px; /* Smaller size */
+    border-radius: 50%; /* Perfect circle */
+    transform: scale(1.3); /* Slightly larger scale for effect */
+    animation: float 6s infinite ease-in-out; /* Floating animation for dynamics */
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) scale(1.3); }
+    50% { transform: translateY(-20px) scale(1.3); }
+}
+
+#resources h2 {
+    color: #333; /* Dark grey for contrast against light background */
+    font-size: 24px; /* Large font size for emphasis */
+    text-align: center; /* Centered text for a balanced header */
+}
+
+.university .dropdown-btn {
+    background-color: #4A90E2; /* Consistent bright blue for interactive elements */
+    color: white; /* White text for high contrast and readability */
+    padding: 12px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 8px;
+    margin-bottom: 5px; /* Space above dropdown for separation */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.university .dropdown-btn:hover {
+    background-color: #357ABD; /* Slightly darker blue on hover for interaction feedback */
+}
+
+.university .dropdown-content {
+    display: none;
+    background-color: #ffffff; /* White background for content to stand out */
+    padding: 15px 20px;
+    border-radius: 8px; /* Rounded corners for content box */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow for depth */
+}
+
+.university .dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.university .dropdown-content ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd; /* Subtle line to separate items */
+}
+
+.university .dropdown-content ul li a {
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 16px; /* Font size suitable for link content */
+}
+
+/* FAQ Section */
+#faq {
+    background-color: #f8f9fa; /* Very light gray for a clean, modern background */
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.accordion-button {
+    background-color: #17a2b8; /* Soft teal for buttons, providing a calm, professional look */
+    color: white;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 5px; /* Space for separation between buttons */
+}
+
+.accordion-button:hover, .accordion-button.active {
+    background-color: #138496; /* Darker teal for a subtle hover effect */
+}
+
+.accordion-content {
+    background-color: #ffffff; /* Pure white background for the content to make it stand out */
+    display: none;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05); /* Light inner shadow for a subtle pop effect */
+}
+
+.accordion-content p {
+    margin: 0;
+    color: #555; /* Soft dark gray for easy readability */
+    line-height: 1.6; /* Adequate space between lines for clarity */
+}
+
+#qa-section {
+    padding: 20px;
+    background-color: #f9f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.qa-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.qa-table th, .qa-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+#question-form {
+    margin-top: 20px;
+}
+
+#question-input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Contact Us Section */
+#contact-us {
+    background-color: #f9f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.contact-method {
+    margin-top: 20px;
+}
+
+.contact-method h3 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.contact-method p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.contact-method a {
+    font-size: 16px;
+    color: #d63447;
+    text-decoration: none;
+}
+
+.contact-method a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+#site-footer {
+    background-color: #2c3e50; /* Dark blue for contrast and visibility */
+    color: #fff; /* White text for clarity */
+    text-align: center; /* Centered text for aesthetic appeal */
+    padding: 10px 20px; /* Padding for spacing */
+    font-size: 16px; /* Adequate font size for readability */
+    border-top: 4px solid #3498db; /* A blue border for a touch of style */
+}
+
+#site-footer p {
+    margin: 0; /* Removes default margin for a clean look */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+/* Experiences Section */
+#experiences {
+    background-color: #f9f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#experiences h2 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-img {
+    width: 120px;  /* Adjusted width to be more appropriate */
+    height: 120px; /* Adjusted height to match width */
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+.testimonial-content {
+    flex: 1; /* Ensures the content takes the remaining space */
+}
+
+.testimonial-content h3 {
+    margin: 0;
+    color: #0056b3;
+}
+
+.testimonial-content h4 {
+    margin: 5px 0;
+    color: #333;
+}
+
+.testimonial-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 10px;
+}
