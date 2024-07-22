@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-link");
     const headerHeight = header.offsetHeight;
+    const additionalOffset = 20; // Adjust this value to match the additional padding you added
 
     window.addEventListener("scroll", function () {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Highlight the current section in the navigation
         sections.forEach((section) => {
             const rect = section.getBoundingClientRect();
-            if (rect.top <= headerHeight && rect.bottom >= headerHeight) {
+            if (rect.top <= headerHeight + additionalOffset && rect.bottom >= headerHeight + additionalOffset) {
                 const id = section.getAttribute("id");
                 navLinks.forEach((link) => {
                     link.classList.remove("active");
@@ -39,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             const targetId = this.getAttribute("href").substring(1);
             const targetSection = document.getElementById(targetId);
-            const targetPosition = targetSection.offsetTop - headerHeight;
+            const targetPosition = targetSection.offsetTop - (headerHeight + additionalOffset);
 
             window.scrollTo({
                 top: targetPosition,
