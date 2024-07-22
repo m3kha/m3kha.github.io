@@ -23,8 +23,8 @@ header {
     /* Offset for sections to avoid being covered by the fixed header */
 /* Offset for sections to avoid being covered by the fixed header */
 .section-offset {
-    padding-top: 100px; /* Adjust based on your header height */
-    margin-top: -100px; /* Adjust based on your header height */
+    padding-top: 80px; /* Adjust based on your header height */
+    margin-top: -80px; /* Adjust based on your header height */
 }
 
 
