@@ -190,79 +190,50 @@ strong {
 }
 
 #application-process {
-    background-color: #f0f8ff; /* Light blue background for a soothing effect */
-    padding: 30px; /* Generous padding for spacious layout */
+    background-color: #f9fafc; /* Light blue background for a calming effect */
+    padding: 40px; /* Generous padding for spacious layout */
     border-radius: 15px; /* More rounded corners for a modern look */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
-    margin-top: 20px;
-    border: 3px solid #4A90E2; /* Bright blue border for emphasis */
-    animation: glow 1.5s infinite alternate; /* Adding a glowing effect */
-}
-
-@keyframes glow {
-    from {
-        border-color: #4A90E2;
-    }
-    to {
-        border-color: #357ABD;
-    }
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+    margin-top: 30px;
+    border: 3px solid #007BFF; /* Bright blue border for emphasis */
 }
 
 #application-process h2 {
     text-align: center;
-    color: #0056b3; /* Deep blue for a professional look */
-    margin-bottom: 20px;
-    font-size: 32px; /* Larger font size for emphasis */
+    color: #333; /* Dark grey for a professional look */
+    margin-bottom: 30px;
+    font-size: 30px; /* Larger font size for emphasis */
     text-transform: uppercase; /* Uppercase text for a bold statement */
-    animation: bounce 2s infinite; /* Adding a bounce effect */
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
+    letter-spacing: 1px; /* Spacing between letters for readability */
 }
 
 .process-step {
     background-color: #ffffff; /* White background for contrast */
-    padding: 20px; /* Adequate padding for content spacing */
+    padding: 25px; /* Adequate padding for content spacing */
     border-radius: 10px; /* Rounded corners for visual appeal */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
-    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    margin-bottom: 25px;
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth transformation and shadow effect */
 }
 
 .process-step:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover for emphasis */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    transform: translateY(-5px); /* Slightly lift on hover for emphasis */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .process-step h3 {
-    color: #d63447; /* Bright red for step titles to make them pop */
+    color: #d9534f; /* Bright red for step titles to make them pop */
     font-size: 24px; /* Larger font size for visibility */
     margin-top: 0;
-    animation: fadeIn 1s ease-in-out; /* Adding a fade-in effect */
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    margin-bottom: 10px; /* Space between title and content */
+    border-left: 5px solid #d9534f; /* Left border for decoration */
+    padding-left: 10px; /* Padding for left border */
 }
 
 .process-step p, .process-step ul {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
+    font-size: 16px;
+    line-height: 1.8; /* Slightly increased line height for readability */
+    color: #555; /* Softer grey for text */
     margin-top: 10px;
 }
 
@@ -274,32 +245,39 @@ strong {
     margin-bottom: 10px; /* Space between list items */
 }
 
+.notice {
+    display: block;
+    margin-top: 5px;
+    color: #007BFF; /* Blue for notice text */
+    font-size: 14px; /* Smaller font size for notice text */
+}
+
 .warning {
     display: flex;
     align-items: center;
     background-color: #fff3cd; /* Light yellow background for warning */
     color: #856404; /* Dark yellow text for readability */
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
     border-left: 5px solid #ffcc00; /* Gold left border for emphasis */
-    margin-top: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
 }
 
 .warning-icon {
     width: 40px; /* Larger width for the warning icon */
     height: 40px; /* Larger height for the warning icon */
-    margin-right: 10px; /* Space between the icon and text */
+    margin-right: 15px; /* Space between the icon and text */
 }
 
 .warning p {
     margin: 0; /* Remove margin for compact text display */
     font-size: 16px; /* Slightly larger font size for warning text */
-    line-height: 1.4; /* Line height for readability */
+    line-height: 1.5; /* Line height for readability */
 }
 
 .dropdown-btn {
-    background-color: #4A90E2; /* Consistent bright blue for interactive elements */
+    background-color: #007BFF; /* Consistent bright blue for interactive elements */
     color: white; /* White text for high contrast and readability */
     padding: 15px;
     font-size: 18px;
@@ -308,21 +286,21 @@ strong {
     cursor: pointer;
     text-align: left;
     border-radius: 10px; /* Rounded corners for buttons */
-    margin-bottom: 5px; /* Space above dropdown for separation */
+    margin-bottom: 10px; /* Space above dropdown for separation */
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 }
 
 .dropdown-btn:hover {
-    background-color: #357ABD; /* Slightly darker blue on hover for interaction feedback */
-    transform: scale(1.02); /* Slightly enlarge on hover */
+    background-color: #0056b3; /* Slightly darker blue on hover for interaction feedback */
+    transform: translateY(-2px); /* Slightly lift on hover */
 }
 
 .dropdown-content {
     display: none;
     background-color: #ffffff; /* White background for content to stand out */
-    padding: 15px 20px;
+    padding: 20px;
     border-radius: 10px; /* Rounded corners for content box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
 }
 
 .dropdown-content ul {
@@ -331,15 +309,24 @@ strong {
 }
 
 .dropdown-content ul li {
-    padding: 8px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #ddd; /* Subtle line to separate items */
 }
 
+.dropdown-content ul li:last-child {
+    border-bottom: none; /* Remove border for last item */
+}
+
 .dropdown-content ul li a {
-    color: #0056b3;
+    color: #007BFF; /* Blue for links */
     text-decoration: none;
     font-size: 16px; /* Font size suitable for link content */
 }
+
+.dropdown-content ul li a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
 
 #resources {
     background-color: #eaf3f9; /* A light, airy blue for a clean and fresh look */
