@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 80px 0 0 0;
+    padding: 0;
     color: #333;
     background-color: #f4f4f4;
 }
@@ -73,9 +73,9 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Offset for sections to avoid being covered by the fixed header */
 .section-offset {
-    padding-top: 120px; /* Increase this value to add more space */
-    margin-top: -80px; /* Keep this value equal to the header height */
-    margin-bottom: 20px; /* Add space between sections to avoid overlap */
+    padding-top: 60px; /* Increase this value to add more space */
+    margin-top: -60px; /* Keep this value equal to the header height */
+    /*margin-bottom: 20px; /* Add space between sections to avoid overlap */
 }
 
 
