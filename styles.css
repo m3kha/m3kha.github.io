@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: #0056b3;
+    background: #001f3f; /* Dark navy background */
     color: #ffffff;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -65,8 +65,8 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a.active {
-    background: #ffffff;
-    color: #0056b3;
+    background: #ffcc00;
+    color: #001f3f;
     border-radius: 5px;
 }
 
@@ -133,7 +133,7 @@ footer p {
 }
 
 #hero {
-    background: #0056b3;
+    background: #001f3f; /* Dark navy background */
     color: #ffffff;
     padding: 60px 20px;
     text-align: center;
@@ -156,7 +156,7 @@ footer p {
 
 .btn-primary {
     background: #ffcc00;
-    color: #0056b3;
+    color: #001f3f;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
@@ -170,19 +170,19 @@ footer p {
 }
 
 .active-section {
-    border-left: 5px solid #0056b3;
+    border-left: 5px solid #001f3f;
     background-color: #e6f7ff;
 }
 
 #about {
     background-color: #f9f9f9;
-    border-left: 4px solid #0056b3;
+    border-left: 4px solid #001f3f;
     padding: 20px;
     margin-top: 20px;
 }
 
 #about h2 {
-    color: #333;
+    color: #001f3f;
     font-size: 24px;
 }
 
@@ -194,7 +194,7 @@ footer p {
 }
 
 strong {
-    color: #0056b3;
+    color: #001f3f;
     font-weight: bold;
 }
 
@@ -202,7 +202,7 @@ strong {
     font-size: 16px;
     color: #5a5a5a;
     background-color: #e6f7ff;
-    border-left: 3px solid #0056b3;
+    border-left: 3px solid #001f3f;
     padding: 10px;
     margin-top: 20px;
     border-radius: 5px;
@@ -252,14 +252,14 @@ strong {
 
 #eligibility {
     background-color: #ffffff;
-    border: 2px solid #0056b3;
+    border: 2px solid #001f3f;
     padding: 20px;
     margin: 20px 15px;
-    box-shadow: 0 4px 8px rgba(0, 56, 179, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 31, 63, 0.2);
 }
 
 #eligibility h2 {
-    color: #0056b3;
+    color: #001f3f;
     font-size: 24px;
 }
 
@@ -279,13 +279,13 @@ strong {
     background: #e6f7ff;
     margin-bottom: 10px;
     padding: 10px;
-    border-left: 5px solid #0056b3;
+    border-left: 5px solid #001f3f;
     font-size: 16px;
     line-height: 1.6;
 }
 
 .eligibility-info ul li strong {
-    color: #0056b3;
+    color: #001f3f;
     font-weight: bold;
 }
 
@@ -449,6 +449,7 @@ strong {
     max-width: 1200px;
     position: relative;
     overflow: hidden;
+    text-align: center; /* Centering text */
 }
 
 #resources h2 {
@@ -508,7 +509,7 @@ strong {
 }
 
 .accordion-button {
-    background-color: #17a2b8;
+    background-color: #001f3f; /* Dark navy for buttons */
     color: white;
     padding: 12px 20px;
     width: 100%;
@@ -523,7 +524,7 @@ strong {
 }
 
 .accordion-button:hover, .accordion-button.active {
-    background-color: #138496;
+    background-color: #0056b3; /* Lighter navy for hover effect */
 }
 
 .accordion-content {
@@ -551,7 +552,7 @@ strong {
 
 #experiences h2 {
     text-align: center;
-    color: #0056b3;
+    color: #001f3f; /* Dark navy color */
     margin-bottom: 20px;
 }
 
@@ -579,7 +580,7 @@ strong {
 
 .testimonial-content h3 {
     margin: 0;
-    color: #0056b3;
+    color: #001f3f; /* Dark navy color */
 }
 
 .testimonial-content h4 {
@@ -594,7 +595,48 @@ strong {
     margin-top: 10px;
 }
 
+#qa-section {
+    padding: 20px;
+    background-color: #f9f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+.qa-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.qa-table th, .qa-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+#question-form {
+    margin-top: 20px;
+}
+
+#question-input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
 
 #contact-us {
     background-color: #f9f9fa;
@@ -609,7 +651,7 @@ strong {
 }
 
 .contact-method h3 {
-    color: #0056b3;
+    color: #001f3f; /* Dark navy color */
     margin-bottom: 10px;
 }
 
