@@ -8,37 +8,36 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #eaf3f9;
     padding-top: 120px;
 }
 
-/* Header Styling */
 header {
-    background: #0056b3; /* Deep blue background */
-    color: #ffffff; /* White text color */
-    padding: 10px 20px; /* Adjusted padding */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    position: fixed; /* Fixed header */
-    top: 0; /* Position at the top of the viewport */
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it stays above other elements */
-    transition: top 0.3s; /* Smooth transition for hiding and showing */
+    background: #0056b3;
+    color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
 }
 
 .nav-container {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav items */
+    justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* Limit the maximum width */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Horizontal padding */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .logo {
-    font-size: 24px; /* Larger font size for the logo */
-    font-weight: bold; /* Bold font weight */
-    color: #ffffff; /* White color for the logo */
-    text-decoration: none; /* Remove underline from the logo */
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 nav {
@@ -47,31 +46,30 @@ nav {
 }
 
 nav ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Display items in a row */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    margin-left: 20px; /* Space between nav items */
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: #ffffff; /* White color for nav links */
-    text-decoration: none; /* Remove underline */
-    font-size: 16px; /* Font size for nav links */
-    padding: 10px 15px; /* Padding for clickable area */
-    transition: background 0.3s, color 0.3s; /* Smooth transition */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
 }
 
 nav ul li a:hover, nav ul li a.active {
-    background: #ffffff; /* White background on hover */
-    color: #0056b3; /* Blue text color on hover */
-    border-radius: 5px; /* Rounded corners */
+    background: #ffffff;
+    color: #0056b3;
+    border-radius: 5px;
 }
 
-/* Mobile navigation */
 nav .menu-icon {
     display: none;
     font-size: 24px;
@@ -106,43 +104,76 @@ nav ul {
     }
 }
 
-/* Offset for sections to avoid being covered by the fixed header */
 .section-offset {
-    padding-top: 120px; /* Increase this value to add more space */
-    margin-top: -120px; /* Keep this value equal to the header height */
+    padding-top: 120px;
+    margin-top: -120px;
 }
 
-/* Additional styling for sections and footer */
 section {
     padding: 20px;
     margin: 0 15px;
     background: #ffffff;
     border: 1px solid #ddd;
-    border-radius: 10px; /* Rounded corners */
-    max-width: 1200px; /* Limit the maximum width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-bottom: 20px; /* Add some space between sections */
+    border-radius: 10px;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 footer {
     text-align: center;
-    padding: 20px 0; /* Increased padding */
-    background: #333; /* Dark background */
-    color: #ffffff; /* White text color */
+    padding: 20px 0;
+    background: #333;
+    color: #ffffff;
 }
 
 footer p {
-    margin: 0; /* Remove default margin */
-    font-size: 14px; /* Smaller font size */
+    margin: 0;
+    font-size: 14px;
 }
 
-/* Additional styles for active section highlighting */
+#hero {
+    background: #0056b3;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: #ffcc00;
+    color: #0056b3;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+    background: #e6b800;
+    color: #ffffff;
+}
+
 .active-section {
-    border-left: 5px solid #0056b3; /* Highlight the left border */
-    background-color: #e6f7ff; /* Light blue background */
+    border-left: 5px solid #0056b3;
+    background-color: #e6f7ff;
 }
 
-/* About Section */
 #about {
     background-color: #f9f9f9;
     border-left: 4px solid #0056b3;
@@ -178,18 +209,47 @@ strong {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Visa Perks Section */
 #visa-perks {
-    background-color: #f0f8ff; /* Very light blue for a subtle, cheerful background */
+    background-color: #f0f8ff;
     padding: 25px;
     margin-top: 30px;
-    border: 2px dashed #4A90E2; /* Dashed border for a playful look */
-    border-radius: 12px; /* Soft rounded corners */
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2); /* Light blue shadow for depth */
-    position: relative; /* For absolute positioning of pseudo-elements */
+    border: 2px dashed #4A90E2;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+    position: relative;
 }
 
-/* Eligibility Section */
+#visa-perks h2 {
+    color: #d63447;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.perks-list p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #336699;
+    margin-bottom: 15px;
+    text-align: justify;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.perks-list strong {
+    color: #2e8b57;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #visa-perks {
+        padding: 20px;
+        border: 2px solid #4A90E2;
+    }
+}
+
 #eligibility {
     background-color: #ffffff;
     border: 2px solid #0056b3;
@@ -230,129 +290,128 @@ strong {
 }
 
 .remark {
-    color: #b30000; /* Bright red for importance */
-    background-color: #ffe6e6; /* Light red background for visibility */
+    color: #b30000;
+    background-color: #ffe6e6;
     padding: 10px;
     margin-top: 15px;
-    border-left: 5px solid #b30000; /* Solid red line to draw attention */
+    border-left: 5px solid #b30000;
     font-weight: bold;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Application Process Section */
 #application-process {
-    background-color: #f9fafc; /* Light blue background for a calming effect */
-    padding: 40px; /* Generous padding for spacious layout */
-    border-radius: 15px; /* More rounded corners for a modern look */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+    background-color: #f9fafc;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     margin-top: 30px;
-    border: 3px solid #007BFF; /* Bright blue border for emphasis */
+    border: 3px solid #007BFF;
 }
 
 #application-process h2 {
     text-align: center;
-    color: #333; /* Dark grey for a professional look */
+    color: #333;
     margin-bottom: 30px;
-    font-size: 30px; /* Larger font size for emphasis */
-    text-transform: uppercase; /* Uppercase text for a bold statement */
-    letter-spacing: 1px; /* Spacing between letters for readability */
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .process-step {
-    background-color: #ffffff; /* White background for contrast */
-    padding: 25px; /* Adequate padding for content spacing */
-    border-radius: 10px; /* Rounded corners for visual appeal */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 25px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transformation and shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .process-step:hover {
-    transform: translateY(-5px); /* Slightly lift on hover for emphasis */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .process-step h3 {
-    color: #d9534f; /* Bright red for step titles to make them pop */
-    font-size: 24px; /* Larger font size for visibility */
+    color: #d9534f;
+    font-size: 24px;
     margin-top: 0;
-    margin-bottom: 10px; /* Space between title and content */
-    border-left: 5px solid #d9534f; /* Left border for decoration */
-    padding-left: 10px; /* Padding for left border */
+    margin-bottom: 10px;
+    border-left: 5px solid #d9534f;
+    padding-left: 10px;
 }
 
 .process-step p, .process-step ul {
     font-size: 16px;
-    line-height: 1.8; /* Slightly increased line height for readability */
-    color: #555; /* Softer grey for text */
+    line-height: 1.8;
+    color: #555;
     margin-top: 10px;
 }
 
 .process-step ul {
-    padding-left: 20px; /* Indent list items */
+    padding-left: 20px;
 }
 
 .process-step ul li {
-    margin-bottom: 10px; /* Space between list items */
+    margin-bottom: 10px;
 }
 
 .notice {
     display: block;
     margin-top: 5px;
-    color: #007BFF; /* Blue for notice text */
-    font-size: 14px; /* Smaller font size for notice text */
+    color: #007BFF;
+    font-size: 14px;
 }
 
 .warning {
     display: flex;
     align-items: center;
-    background-color: #fff3cd; /* Light yellow background for warning */
-    color: #856404; /* Dark yellow text for readability */
+    background-color: #fff3cd;
+    color: #856404;
     padding: 15px;
     border-radius: 10px;
-    border-left: 5px solid #ffcc00; /* Gold left border for emphasis */
+    border-left: 5px solid #ffcc00;
     margin-top: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .warning-icon {
-    width: 40px; /* Larger width for the warning icon */
-    height: 40px; /* Larger height for the warning icon */
-    margin-right: 15px; /* Space between the icon and text */
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
 }
 
 .warning p {
-    margin: 0; /* Remove margin for compact text display */
-    font-size: 16px; /* Slightly larger font size for warning text */
-    line-height: 1.5; /* Line height for readability */
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .dropdown-btn {
-    background-color: #007BFF; /* Consistent bright blue for interactive elements */
-    color: white; /* White text for high contrast and readability */
+    background-color: #007BFF;
+    color: white;
     padding: 15px;
     font-size: 18px;
     width: 100%;
     border: none;
     cursor: pointer;
     text-align: left;
-    border-radius: 10px; /* Rounded corners for buttons */
-    margin-bottom: 10px; /* Space above dropdown for separation */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .dropdown-btn:hover {
-    background-color: #0056b3; /* Slightly darker blue on hover for interaction feedback */
-    transform: translateY(-2px); /* Slightly lift on hover */
+    background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
 .dropdown-content {
     display: none;
-    background-color: #ffffff; /* White background for content to stand out */
+    background-color: #ffffff;
     padding: 20px;
-    border-radius: 10px; /* Rounded corners for content box */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-content ul {
@@ -362,62 +421,45 @@ strong {
 
 .dropdown-content ul li {
     padding: 10px 0;
-    border-bottom: 1px solid #ddd; /* Subtle line to separate items */
+    border-bottom: 1px solid #ddd;
 }
 
 .dropdown-content ul li:last-child {
-    border-bottom: none; /* Remove border for last item */
+    border-bottom: none;
 }
 
 .dropdown-content ul li a {
-    color: #007BFF; /* Blue for links */
+    color: #007BFF;
     text-decoration: none;
-    font-size: 16px; /* Font size suitable for link content */
+    font-size: 16px;
 }
 
 .dropdown-content ul li a:hover {
-    text-decoration: underline; /* Underline on hover for links */
+    text-decoration: underline;
 }
 
-/* Resources Section */
 #resources {
-    background-color: #eaf3f9; /* A light, airy blue for a clean and fresh look */
-    padding: 30px; /* Generous padding for a spacious layout */
-    margin: 20px auto; /* Center alignment to focus attention */
-    border: 5px solid #4A90E2; /* Bright blue border for visual prominence */
-    border-radius: 7px; /* Soft rounded corners for a modern feel */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    width: 90%; /* Limiting width for focused content display */
-    max-width: 1200px; /* Max width to avoid overstretch on larger screens */
-    position: relative; /* Needed for pseudo-elements and absolute positioning */
-    overflow: hidden; /* Keeps child elements contained within the border */
-}
-
-#resources:before {
-    content: "";
-    position: absolute;
-    top: -30px; right: -30px; /* Adjusted positioning */
-    background-color: rgba(74, 144, 226, 0.3); /* More transparent blue */
-    height: 100px; width: 100px; /* Smaller size */
-    border-radius: 50%; /* Perfect circle */
-    transform: scale(1.3); /* Slightly larger scale for effect */
-    animation: float 6s infinite ease-in-out; /* Floating animation for dynamics */
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0) scale(1.3); }
-    50% { transform: translateY(-20px) scale(1.3); }
+    background-color: #eaf3f9;
+    padding: 30px;
+    margin: 20px auto;
+    border: 5px solid #4A90E2;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
 }
 
 #resources h2 {
-    color: #333; /* Dark grey for contrast against light background */
-    font-size: 24px; /* Large font size for emphasis */
-    text-align: center; /* Centered text for a balanced header */
+    color: #333;
+    font-size: 24px;
+    text-align: center;
 }
 
 .university .dropdown-btn {
-    background-color: #4A90E2; /* Consistent bright blue for interactive elements */
-    color: white; /* White text for high contrast and readability */
+    background-color: #4A90E2;
+    color: white;
     padding: 12px;
     font-size: 18px;
     width: 100%;
@@ -425,20 +467,20 @@ strong {
     cursor: pointer;
     text-align: left;
     border-radius: 8px;
-    margin-bottom: 5px; /* Space above dropdown for separation */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
 }
 
 .university .dropdown-btn:hover {
-    background-color: #357ABD; /* Slightly darker blue on hover for interaction feedback */
+    background-color: #357ABD;
 }
 
 .university .dropdown-content {
     display: none;
-    background-color: #ffffff; /* White background for content to stand out */
+    background-color: #ffffff;
     padding: 15px 20px;
-    border-radius: 8px; /* Rounded corners for content box */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow for depth */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .university .dropdown-content ul {
@@ -448,26 +490,25 @@ strong {
 
 .university .dropdown-content ul li {
     padding: 8px 0;
-    border-bottom: 1px solid #ddd; /* Subtle line to separate items */
+    border-bottom: 1px solid #ddd;
 }
 
 .university .dropdown-content ul li a {
     color: #0056b3;
     text-decoration: none;
-    font-size: 16px; /* Font size suitable for link content */
+    font-size: 16px;
 }
 
-/* FAQ Section */
 #faq {
-    background-color: #f8f9fa; /* Very light gray for a clean, modern background */
+    background-color: #f8f9fa;
     padding: 25px;
     margin-top: 30px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-button {
-    background-color: #17a2b8; /* Soft teal for buttons, providing a calm, professional look */
+    background-color: #17a2b8;
     color: white;
     padding: 12px 20px;
     width: 100%;
@@ -478,29 +519,28 @@ strong {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    margin-bottom: 5px; /* Space for separation between buttons */
+    margin-bottom: 5px;
 }
 
 .accordion-button:hover, .accordion-button.active {
-    background-color: #138496; /* Darker teal for a subtle hover effect */
+    background-color: #138496;
 }
 
 .accordion-content {
-    background-color: #ffffff; /* Pure white background for the content to make it stand out */
+    background-color: #ffffff;
     display: none;
     overflow: hidden;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05); /* Light inner shadow for a subtle pop effect */
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .accordion-content p {
     margin: 0;
-    color: #555; /* Soft dark gray for easy readability */
-    line-height: 1.6; /* Adequate space between lines for clarity */
+    color: #555;
+    line-height: 1.6;
 }
 
-/* Experiences Section */
 #experiences {
     background-color: #f9f9fa;
     padding: 20px;
@@ -526,15 +566,15 @@ strong {
 }
 
 .testimonial-img {
-    width: 120px;  /* Adjusted width to be more appropriate */
-    height: 120px; /* Adjusted height to match width */
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin-right: 20px;
-    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    object-fit: cover;
 }
 
 .testimonial-content {
-    flex: 1; /* Ensures the content takes the remaining space */
+    flex: 1;
 }
 
 .testimonial-content h3 {
@@ -554,7 +594,6 @@ strong {
     margin-top: 10px;
 }
 
-/* Community Q&A Section */
 #qa-section {
     padding: 20px;
     background-color: #f9f9fa;
@@ -598,7 +637,6 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Contact Us Section */
 #contact-us {
     background-color: #f9f9fa;
     padding: 20px;
@@ -632,19 +670,18 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Footer Styling */
 #site-footer {
-    background-color: #2c3e50; /* Dark blue for contrast and visibility */
-    color: #fff; /* White text for clarity */
-    text-align: center; /* Centered text for aesthetic appeal */
-    padding: 10px 20px; /* Padding for spacing */
-    font-size: 16px; /* Adequate font size for readability */
-    border-top: 4px solid #3498db; /* A blue border for a touch of style */
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-top: 4px solid #3498db;
 }
 
 #site-footer p {
-    margin: 0; /* Removes default margin for a clean look */
-    line-height: 1.5; /* Line height for better readability */
+    margin: 0;
+    line-height: 1.5;
 }
 
 @media (max-width: 768px) {
