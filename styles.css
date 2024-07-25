@@ -1,5 +1,3 @@
-/* Existing CSS */
-
 html {
     scroll-behavior: smooth;
 }
@@ -18,17 +16,13 @@ body {
 header {
     background: #0056b3; /* Deep blue background */
     color: #ffffff; /* White text color */
-    padding: 20px 0; /* Padding for vertical spacing */
+    padding: 10px 20px; /* Adjusted padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     position: fixed; /* Fixed header */
     top: 0; /* Position at the top of the viewport */
     width: 100%; /* Full width */
     z-index: 1000; /* Ensure it stays above other elements */
     transition: top 0.3s; /* Smooth transition for hiding and showing */
-}
-
-.header-hidden {
-    top: -100px; /* Move header up to hide it */
 }
 
 .nav-container {
@@ -45,6 +39,11 @@ header {
     font-weight: bold; /* Bold font weight */
     color: #ffffff; /* White color for the logo */
     text-decoration: none; /* Remove underline from the logo */
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
@@ -72,13 +71,46 @@ nav ul li a:hover, nav ul li a.active {
     border-radius: 5px; /* Rounded corners */
 }
 
+/* Mobile navigation */
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+}
+
 /* Offset for sections to avoid being covered by the fixed header */
 .section-offset {
     padding-top: 120px; /* Increase this value to add more space */
     margin-top: -120px; /* Keep this value equal to the header height */
-    /*margin-bottom: 20px; /* Add space between sections to avoid overlap */
 }
-
 
 /* Additional styling for sections and footer */
 section {
@@ -109,7 +141,6 @@ footer p {
     border-left: 5px solid #0056b3; /* Highlight the left border */
     background-color: #e6f7ff; /* Light blue background */
 }
-
 
 /* About Section */
 #about {
@@ -156,45 +187,6 @@ strong {
     border-radius: 12px; /* Soft rounded corners */
     box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2); /* Light blue shadow for depth */
     position: relative; /* For absolute positioning of pseudo-elements */
-}
-
-#visa-perks:before {
-    content: "🎉"; /* Decorative emoji for fun */
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    font-size: 32px;
-}
-
-#visa-perks h2 {
-    color: #d63447; /* Bright red for enthusiasm */
-    font-family: 'Comic Sans MS', 'Comic Neue', cursive; /* Fun and informal font */
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.perks-list p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #336699; /* Moderate blue for readability and cheer */
-    margin-bottom: 15px;
-    text-align: justify;
-    background-color: #ffffff; /* White background for each perk to stand out */
-    padding: 10px;
-    border-radius: 8px; /* Rounded corners for a friendly touch */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadows for a pop-out effect */
-}
-
-.perks-list strong {
-    color: #2e8b57; /* Vivid green for keywords */
-    font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    #visa-perks {
-        padding: 20px;
-        border: 2px solid #4A90E2; /* Solid border on smaller screens for clarity */
-    }
 }
 
 /* Eligibility Section */
@@ -508,7 +500,14 @@ strong {
     line-height: 1.6; /* Adequate space between lines for clarity */
 }
 
-
+/* Experiences Section */
+#experiences {
+    background-color: #f9f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
 
 #experiences h2 {
     text-align: center;
@@ -555,19 +554,7 @@ strong {
     margin-top: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Community Q&A Section */
 #qa-section {
     padding: 20px;
     background-color: #f9f9fa;
@@ -660,12 +647,9 @@ button:hover {
     line-height: 1.5; /* Line height for better readability */
 }
 
-/* Experiences Section */
-#experiences {
-    background-color: #f9f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+@media (max-width: 768px) {
+    section {
+        margin: 0 10px;
+        padding: 15px;
+    }
 }
-
