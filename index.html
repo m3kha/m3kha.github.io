@@ -11,7 +11,8 @@
         <nav>
             <div class="nav-container">
                 <a href="index.html" class="logo">F-2-7S Visa Portal</a>
-                <ul>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <ul id="nav-list">
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#application-process" class="nav-link">Application Process</a></li>
                     <li><a href="#eligibility" class="nav-link">Eligibility</a></li>
@@ -252,6 +253,21 @@
     </footer>
 
     <script src="dropdown.js"></script>
-    <script src="scripts.js"></script> <!-- Link to the new JavaScript file -->
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('show');
+        }
+
+        function toggleAccordion(button) {
+            button.classList.toggle('active');
+            const content = button.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
