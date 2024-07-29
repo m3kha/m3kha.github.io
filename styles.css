@@ -111,13 +111,14 @@ nav ul {
 
 section {
     padding: 20px;
-    margin: 0 15px;
+    margin: 20px auto;
     background: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
     max-width: 1200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    text-align: center; /* Centering text */
 }
 
 footer {
@@ -254,7 +255,7 @@ strong {
     background-color: #ffffff;
     border: 2px solid #001f3f;
     padding: 20px;
-    margin: 20px 15px;
+    margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 31, 63, 0.2);
 }
 
@@ -325,6 +326,7 @@ strong {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 25px;
     transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left; /* Ensuring the text is left-aligned within the centered section */
 }
 
 .process-step:hover {
@@ -412,6 +414,7 @@ strong {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Ensuring the text is left-aligned within the centered section */
 }
 
 .dropdown-content ul {
@@ -576,6 +579,7 @@ strong {
 
 .testimonial-content {
     flex: 1;
+    text-align: left; /* Ensuring the text is left-aligned within the centered section */
 }
 
 .testimonial-content h3 {
@@ -594,8 +598,6 @@ strong {
     color: #666;
     margin-top: 10px;
 }
-
-
 
 #contact-us {
     background-color: #f9f9fa;
